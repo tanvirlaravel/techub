@@ -10,6 +10,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
+    
 
 <!-- tp-offcanvus-area-start -->
 <div class="tpoffcanvas-area">
@@ -19,7 +20,7 @@
         </div>
         <div class="tpoffcanvas__logo">
             <a href="index.html">
-                <img src="assets/img/logo/logo.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.png" alt="">
             </a>
         </div>
         <div class="tpoffcanvas__title">
@@ -95,7 +96,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-4 col-md-4 col-6">
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block">
