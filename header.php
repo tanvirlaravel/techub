@@ -68,6 +68,8 @@
                     <div class="tp-header-top-address tp-header-5-top-address">
                         <span><i class="fa-thin fa-location-dot"></i><a href="https://www.google.com/maps/@41.6758525,-86.2531698,18.17z"> Manchester 21, Zurich, CH</a></span>
                         <span><i class="fa-light fa-envelope"></i> <a href="mailto:techubinfo@mail.com">techubinfo@mail.com</a></span>
+	                    <?php $value = get_theme_mod( 'text_setting', "my name is default" ); ?>
+                        <?php echo $value; ?>
                     </div>
                 </div>
                 <div class="col-xl-6">
