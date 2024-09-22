@@ -1,0 +1,5 @@
+wp_footer()
+Fires the wp_footer action.
+
+do_action( ‘wp_footer’ )
+Prints scripts or data before the closing body tag on the front end.

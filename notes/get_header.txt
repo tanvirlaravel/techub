@@ -1,0 +1,13 @@
+get_header( string $name = null, array $args = array() ): void|false
+
+Loads header template.
+
+Description
+Includes the header template for a theme or if a name is specified then a specialized header will be included.
+
+For the parameter, if the file is called "header-special.php" then specify "special".
+
+
+Hooks
+do_action( ‘get_header’, string|null $name, array $args )
+Fires before the header template file is loaded.

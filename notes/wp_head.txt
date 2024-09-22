@@ -1,0 +1,5 @@
+wp_head()
+Fires the wp_head action.
+
+do_action( ‘wp_head’ )
+Prints scripts or data in the head tag on the front end.
