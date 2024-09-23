@@ -4,8 +4,6 @@
  $email_address = get_theme_mod( 'email_address', "techubinfo@mail.com" );
  $header_top_switch = get_theme_mod( 'header_top_switch', false );
 
-
-
 ?>
 
 <?php echo  get_template_part('template-parts/header/header-search'); ?>
@@ -60,7 +58,7 @@
 				<div class="row align-items-center">
 					<div class="col-xl-2 col-lg-4 col-md-4 col-6">
 						<div class="logo">
-							<a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.png" alt=""></a>
+							<?php techub_header_logo(); ?>
 						</div>
 					</div>
 					<div class="col-xl-6 d-none d-xl-block">

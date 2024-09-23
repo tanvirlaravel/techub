@@ -27,3 +27,12 @@ function  techub_header_social(  ) {
 <?php
 
 }
+
+function techub_header_logo(  ) {
+	$header_logo = get_theme_mod( 'header_logo', get_template_directory_uri() . "/assets/img/logo/logo.png" );
+
+
+	?>
+	<a href="<?php echo home_url('/') ?>"><img src="<?php echo $header_logo; ?>" alt=""></a>
+<?php
+}

@@ -120,7 +120,28 @@ function techub_header_social_section(){
 	);
 }
 
+function techub_header_logo_section(){
+	new \Kirki\Section(
+		'techub_header_logo_section',
+		[
+			'title'       => esc_html__( 'Header Logo', 'kirki' ),
+			'description' => esc_html__( 'My Section Description.', 'kirki' ),
+			'panel'       => 'techub_panel',
+			'priority'    => 160,
+		]
+	);
+
+	new \Kirki\Field\Image(
+		[
+			'settings'    => 'header_logo',
+			'label'       => esc_html__( 'Image (URL)', 'kirki' ),
+			'description' => esc_html__( 'The saved value will be the URL.', 'kirki' ),
+			'section'     => 'techub_header_logo_section',
+			'default'     => get_template_directory_uri() . "/assets/img/logo/logo.png",
+		]
+	);
+}
 
 techub_header_info_section();
 techub_header_social_section();
-
+techub_header_logo_section();
