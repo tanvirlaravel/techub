@@ -22,6 +22,20 @@ function techub_header_info_section(){
 	);
 
 
+	new \Kirki\Field\Checkbox_Switch(
+		[
+			'settings'    => 'header_top_switch',
+			'label'       => esc_html__( 'Header topbar Switch Field', 'kirki' ),
+			'description' => esc_html__( 'Simple switch control', 'kirki' ),
+			'section'     => 'techub_header_section',
+			'default'     => 'off',
+			'choices'     => [
+				'on'  => esc_html__( 'Enable', 'kirki' ),
+				'off' => esc_html__( 'Disable', 'kirki' ),
+			],
+		]
+	);
+
 	new \Kirki\Field\Text(
 		[
 			'settings' => 'address_text',
